@@ -1,0 +1,14 @@
+<web-app>
+<filter>
+<filter-name>requestFilter</filter-name>
+<filter-class>Filters.requestFilter</filter-class>
+</filter>
+
+<filter-mapping>
+<filter-name>requestFilter</filter-name>
+<url-pattern>/*</url-pattern>
+<dispatcher>INCLUDE</dispatcher>
+<dispatcher>FORWARD</dispatcher>
+<dispatcher>REQUEST</dispatcher>
+</filter-mapping>
+</web-app>
